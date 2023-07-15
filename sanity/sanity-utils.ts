@@ -2,10 +2,10 @@ import { createClient, groq } from "next-sanity";
 
 export async function getProject(){
     const client = createClient({
-        projectId : 'onczd6rt',
+        projectId : 'YOUR PROJECT ID',
         dataset : 'production',
-        apiVersion : '2023-06-16',
-        useCdn : false
+        apiVersion : 'YOUR API VERSION',
+        useCdn : false //optional
     })
 
     return client.fetch(
