@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .card{
+    background-color: theme("colors.gray.950");
+    border-radius: theme("borderRadius.md");
+    padding: them("space.2");
+    box-shadow: theme("boxShadow.xl");
+    color: white;
+  }
+
+  .card-2{
+    background-color: theme("colors.blue.800");
+    border-radius: theme("borderRadius.md");
+    margin: theme("space.6");
+    box-shadow: theme("boxShadow.xl");
+    color: white;
+  }
+}
+
+@layer utilities{
+  .strokeFont{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }
+  .strokeFont-white{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+  .bg-greenblue{
+    background-color: #4385b0;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  background: #D1C6C6;
+  overflow-x: hidden;
+}
+
+.spacerBg{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1{
+  background-image: url(../public/layered-waves-haikei.svg);
+}
+
+.layer2{
+  background-image: url(../public/stacked-steps-haikei.svg);
+}
+
+.layer3{
+  background-image: url(../public/layered-peaks-haikei.svg);
+}
