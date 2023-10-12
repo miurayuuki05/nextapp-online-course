@@ -5,6 +5,8 @@ A unique web app about online course, or can be used as other things. You can us
 
 This project also have sanity cms in it, so you can use it immediately without integrating cms, but if you want to use your own, just delete the sanity folder, as well as other sanity config file. 
 
+Live Web Example : https://nextapp-online-course.vercel.app
+
 ## Configure Sanity Inside The Project
 
 ### 1. Go to app directory
